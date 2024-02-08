@@ -1,16 +1,24 @@
 import './cards.styles.scss';
 import CardItem from '../card-item/card-item.component';
+import Story from '../story/story.component';
 
 const Cards = ({ users }) => {
     return (
-        <div className="cards-container">
-            {users.map((user) =>
+        <div className='container'>
 
-            (
-                <CardItem user={user} />
-            )
-            )}
+            <div className="cards-container">
+                {users.map((user) =>
+
+                (
+                    <CardItem user={user} />
+                )
+                )}
+            </div>
+            <Story/>
         </div>
+
+
+
     );
 }
 
